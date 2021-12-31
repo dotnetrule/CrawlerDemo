@@ -11,5 +11,7 @@ namespace CrawlerDemo.Sites
     {
         string Url { get; }
         Func<HtmlDocument, List<HtmlNode>> Filter { get; }
+        Func<HtmlNode?, IProduct> CreateProduct { get; }
+
     }
 }

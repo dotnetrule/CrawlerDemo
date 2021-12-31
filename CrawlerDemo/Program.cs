@@ -9,7 +9,9 @@ var products = await Functions.startCrawlerasync(new Bol());
 if(products.Count > 0) { 
     foreach(var item in products)
     {
-        Console.WriteLine(item.Name.Replace("\n",""));
+        Console.WriteLine($"{item.Name.Replace("\n","")} ${item.Description}");
+        Console.WriteLine($"{item.Link}");
+
     }
 
     Console.ReadLine();

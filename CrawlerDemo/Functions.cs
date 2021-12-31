@@ -24,11 +24,7 @@ namespace CrawlerDemo
              //           .Where(x => x.GetAttributeValue("class", "").Equals("product-item--row js_item_root ")).ToList();
             foreach (var div in divs)
             {
-                var product = new Product
-                {
-                    Name = div.Descendants("div").Where(x => x.GetAttributeValue("class", "").Equals("product-title--inline")).FirstOrDefault().InnerText,
-                    Link = div.Descendants("a").FirstOrDefault().ChildAttributes("href").FirstOrDefault().Value
-                };
+                var product = site.CreateProduct(div);
                 products.Add(product);
             }
 
