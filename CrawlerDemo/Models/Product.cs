@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrawlerDemo
 {
-    internal class Product
+    internal class Product : IProduct
     {
         public string Name { get; set; }
         public string Description { get; set; }
