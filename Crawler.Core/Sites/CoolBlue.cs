@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrawlerDemo.Sites
+namespace Crawler.Core.Models
 {
-    internal class CoolBlue : ISite
+    public class CoolBlue : ISite
     {
         public string Url => "https://www.coolblue.nl/gaming-headsets/logitech-g/";
 

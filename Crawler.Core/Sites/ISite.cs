@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrawlerDemo.Sites
+namespace Crawler.Core.Models
 {
-    internal interface ISite
+    public interface ISite
     {
         string Url { get; }
         Func<HtmlDocument, List<HtmlNode>> Filter { get; }

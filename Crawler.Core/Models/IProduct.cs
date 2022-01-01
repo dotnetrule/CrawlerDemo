@@ -1,4 +1,4 @@
-﻿namespace CrawlerDemo
+﻿namespace Crawler.Core.Models
 {
     public interface IProduct
     {

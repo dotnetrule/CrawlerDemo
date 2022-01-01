@@ -1,10 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using CrawlerDemo;
-using CrawlerDemo.Sites;
+using Crawler.Core.Models;
 
 Console.WriteLine("Hello, World!");
 
-var products = await Functions.startCrawlerasync(new Bol());
+var products = await Crawler.Core.Functions.startCrawlerasync(new Bol());
 
 if(products.Count > 0) { 
     foreach(var item in products)

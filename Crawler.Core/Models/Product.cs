@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrawlerDemo
+namespace Crawler.Core.Models
 {
-    internal class Product : IProduct
+    public class Product : IProduct
     {
         public string Name { get; set; }
         public string Description { get; set; }

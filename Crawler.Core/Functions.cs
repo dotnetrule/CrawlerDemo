@@ -1,4 +1,4 @@
-﻿using CrawlerDemo.Sites;
+﻿using Crawler.Core.Models;
 using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrawlerDemo
+namespace Crawler.Core
 {
-    internal class Functions
+    public class Functions
     {
         public static async Task<List<IProduct>> startCrawlerasync(ISite site)
         {
